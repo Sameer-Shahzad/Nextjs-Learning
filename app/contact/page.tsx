@@ -1,3 +1,12 @@
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+    title: "Contact Page",
+    description: "This is the contact page of our Next.js application",
+    keywords: ["contact", "next.js", "react", "javascript"],
+}
+
+
 async function getData() {
     const res = await fetch (`${process.env.NEXT_URL}/api/apisub`, {
         method: "POST",
